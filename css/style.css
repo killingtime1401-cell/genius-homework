@@ -1,1 +1,57 @@
-h1 {border: 4px solid black}
+:root {
+  --color-brand: #2b7fff;
+  --color-primary-dark: #011c44;
+  --color-pimary-light: #ffffff;
+}
+
+/* Global/Base */
+ul {
+  list-style-type: none;
+}
+body {
+  color: var(--color-primary-dark);
+}
+/* Button */
+.button-order {
+  color: var(--color-pimary-light);
+  background-color: var(--color-brand);
+  border: 2px solid var(--color-brand);
+  border-radius: 32px;
+  cursor: pointer;
+}
+.button-order:hover {
+  color: var(--color-brand);
+  background-color: transparent;
+  border: 2px solid var(--color-brand);
+  border-radius: 32px;
+}
+.button-order:focus {
+  color: var(--color-brand);
+  background-color: transparent;
+  border: 2px solid var(--color-brand);
+  border-radius: 32px;
+}
+/* Link */
+.header-link {
+  color: var(--color-primary-dark);
+}
+.header-link:hover {
+  color: var(--color-brand);
+}
+.footer-link {
+  color: var(--color-pimary-light);
+}
+
+/* Hero section */
+.hero-title {
+  color: var(--color-brand);
+}
+/* Section 2 */
+
+.accent-heading {
+  color: var(--color-brand);
+}
+/* sectiom 3 */
+.procedure {
+  color: var(--color-pimary-light);
+}
