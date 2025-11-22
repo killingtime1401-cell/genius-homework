@@ -22,115 +22,137 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a href="/"><img src="./images/logo.svg" alt="логотип" /></a>
-        <ul>
+      <nav class="navigation">
+        <a style="align-items: center" href="/"
+          ><img src="./images/logo.svg" alt="логотип"
+        /></a>
+        <ul class="header-menu">
           <li><a class="header-link" href="#about us">Про нас</a></li>
-          <li><a class="header-link" href="#why us">Чому ми</a></li>
+          <li><a class="header-link" href="#why-us">Чому ми</a></li>
           <li>
             <a class="header-link" href="#our procedures">Наші процедури</a>
           </li>
-          <li><a class="header-link" href="#contakt">Контакти</a></li>
+          <li><a class="header-link" href="#where">Контакти</a></li>
+        </ul>
+        <ul class="header-social">
+          <li>
+            <a href="tel:+380666873213" target="_blank"
+              ><img
+                src="./images/telephone-receiver_icon-icons.com_56033 1.svg"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/?locale=uk_UA" target="_blank"
+              ><img src="./images/facebook.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="./images/inst.svg" alt=""
+            /></a>
+          </li>
         </ul>
         <!-- Logo and menu-->
       </nav>
-      <ul>
-        <li>
-          <a href="https://www.instagram.com/" target="_blank">
-            <img src="./images/inst.svg" alt=""
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/?locale=uk_UA" target="_blank"
-            ><img src="./images/facebook.svg" alt=""
-          /></a>
-        </li>
-        <li>
-          <a href="tel:+380666873213" target="_blank"
-            ><img
-              src="./images/telephone-receiver_icon-icons.com_56033 1.svg"
-              alt=""
-          /></a>
-        </li>
-      </ul>
+
       <!-- instagram, facebook,call -->
     </header>
 
     <main>
-      <!-- 1 -->
-      <p>Косметологічна клініка</p>
-      <section><h1 class="hero-title">beauty zone</h1></section>
-      <button class="button-order" type="button">Замовити дзвінок</button>
-      <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+      <section class="main">
+        <!-- 1 -->
+        <p>Косметологічна клініка</p>
+        <h1 class="hero-title">
+          beauty <br />
+          zone
+        </h1>
+        <button class="button-order" type="button">Замовити дзвінок</button>
+        <p class="button-description">
+          Запишись та отримай безкоштовну консультацію нашого косметолога
+        </p>
+      </section>
       <!-- 2 -->
-      <section id="about us">
+      <section class="section about-us" id="about us">
         <h2 class="changes">
-          Перевтілюйтесь в <span class="accent-heading"> beauty zone! </span>
+          Перевтілюйтесь <br />
+          в <span class="accent-heading"> beauty zone! </span>
         </h2>
-        <p>
-          Наша косметологічна клініка пропонує вам професійні послуги з догляду
-          за шкірою обличчя та тіла.
-        </p>
-        <p>
-          B <span class="accent-p">beauty zone </span> ми гарантуємо найвищі
-          стандарти якості та приємний сервіс. Наші косметологічні процедури та
-          препарати допоможуть вам підтримувати свою красу та молодість. З нами
-          краса назавжди!
-        </p>
-        <img src="./images/faceafter.jpg" alt="facebefore" />
-        <img src="./images/facebefore.jpg" alt="faceafter" />
+        <div class="discription-about-us">
+          <p>
+            Наша косметологічна клініка пропонує вам професійні послуги з
+            догляду за шкірою обличчя та тіла.
+          </p>
+          <p>
+            B <span class="accent-p">beauty zone </span> ми гарантуємо найвищі
+            стандарти якості та приємний сервіс. Наші косметологічні процедури
+            та препарати допоможуть вам підтримувати свою красу та молодість. З
+            нами краса назавжди!
+          </p>
+        </div>
+        <div class="changes-img">
+          <img src="./images/faceafter.jpg" alt="facebefore" />
+          <img src="./images/facebefore.jpg" alt="faceafter" />
+        </div>
       </section>
       <!-- 3 -->
-      <section id="why us">
-        <h2 class="why us">
-          Чому люди <span class="accent-heading">обирають нас</span>
+      <section class="section" id="why-us">
+        <h2 class="why-us">
+          Чому люди <span class="accent-heading"><br />обирають нас</span>
         </h2>
-        <div>
+        <div class="why-us-description">
           <article>
-            <img src="./images/symbol-1.svg" alt="atom" />
+            <img src="./images/symbol-1.svg" alt="atom" /><br />
             Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5
             років
           </article>
           <article>
-            <img src="./images/symbol-2.svg" alt="creams" />
+            <img src="./images/symbol-2.svg" alt="creams" /><br />
             Використовуємо тільки професійне обладнання та косметику, перевірену
             часом
           </article>
           <article>
-            <img src="./images/symbol-3.svg" alt="crow" />
+            <img src="./images/symbol-3.svg" alt="crow" /><br />
             Наша мета - підкреслити переваги та приховати недоліки, а не
             переробити
           </article>
         </div>
       </section>
       <!-- 4 -->
-      <section id="our procedures">
-        <h2>Наші <span class="accent-heading">процедури</span></h2>
-        <ul>
-          <li class="procedure">
-            <article>
-              <img src="./images/procedure1.jpg" alt="procedure1" />Маски для
-              обличчя
-            </article>
-          </li>
-          <li class="procedure">
-            <article>
-              <img src="./images/procedure2.jpg" alt="procedure2" />Уколи для
-              обличчя
-            </article>
-          </li>
-          <li class="procedure">
-            <article>
-              <img src="./images/procedure3.jpg" alt="procedure3" />Пілінг для
-              обличчя
-            </article>
-          </li>
-        </ul>
+      <section class="section" id="our procedures">
+        <h2 class="header-procedures">
+          Наші <span class="accent-heading">процедури</span>
+        </h2>
+        <div class="procedures">
+          <ul>
+            <li>
+              <article>
+                <img src="./images/procedure1.jpg" alt="procedure1" />Маски для
+                обличчя
+              </article>
+            </li>
+            <li>
+              <article>
+                <img src="./images/procedure2.jpg" alt="procedure2" />Уколи для
+                обличчя
+              </article>
+            </li>
+            <li>
+              <article>
+                <img src="./images/procedure3.jpg" alt="procedure3" />Пілінг для
+                обличчя
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- 5 -->
-      <section id="contakt">
-        <h2>Як нас <span class="accent-heading">знайти</span></h2>
+      <h2 class="where-title">
+        Як нас <span class="accent-heading">знайти</span>
+      </h2>
+      <section class="section where" id="where">
         <iframe
+          class="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475791668505!2d30.775223399999994!3d50.50671339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDRl9C90LAsIDA3NDAw!5e0!3m2!1suk!2ssk!4v1763205400398!5m2!1suk!2ssk"
           width="605"
           height="481"
@@ -139,6 +161,18 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+        <div class="forma">
+          <p class="header-forma">
+            Запишіться <span class="accent-heading">безкоштовно</span> та
+            отримайте подарунок
+          </p>
+          <button class="button-order" type="button">
+            Записатись безкоштовно
+          </button>
+          <p class="form-button-description">
+            Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
+          </p>
+        </div>
       </section>
     </main>
     <footer>
@@ -147,11 +181,11 @@
           <a href="/"><img src="./images/logo.svg" alt="логотип" /></a>
           <ul>
             <li><a class="footer-link" href="#about us">Про нас</a></li>
-            <li><a class="footer-link" href="#why us">Чому ми</a></li>
+            <li><a class="footer-link" href="#why-us">Чому ми</a></li>
             <li>
               <a class="footer-link" href="#our procedures">Наші процедури</a>
             </li>
-            <li><a class="footer-link" href="#contakt">Контакти</a></li>
+            <li><a class="footer-link" href="#where">Контакти</a></li>
           </ul>
           <ul>
             <li>
