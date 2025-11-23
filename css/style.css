@@ -14,12 +14,15 @@ ul {
   padding: 0;
   margin: 0;
 }
+li {
+  margin: 0;
+}
 body {
   color: var(--color-primary-dark);
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5;
+  /* font-size: 18px; */
+  line-height: 1;
   margin: 0;
 }
 h2 {
@@ -36,6 +39,12 @@ p {
 }
 .section {
   padding: 48px 0px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1288px;
+  width: 100%;
+  padding: 0 24px;
 }
 /* Button */
 .button-order {
@@ -120,17 +129,8 @@ header {
   text-align: center;
   padding-top: 14px;
 }
-.main {
-  padding: 16px 700px 63px 200px;
-}
-.main :first-child {
-  margin: 0 0 16px 0;
-}
 
 /* Section 2 */
-.about-us {
-  margin-left: 100px;
-}
 
 .accent-heading {
   color: var(--color-brand);
@@ -155,6 +155,7 @@ header {
 }
 .why-us-description {
   display: flex;
+  justify-content: center;
   gap: 58px;
   margin: 0px 190px;
 }
@@ -162,6 +163,8 @@ article {
   background-color: var(--color-pimary-light);
   text-align: center;
   border-radius: 32px;
+  width: 316px;
+  padding: 24px 32px;
 }
 /* sectiom 4 */
 .procedures {
@@ -169,6 +172,7 @@ article {
 }
 .header-procedures {
   text-align: center;
+  margin-bottom: 48px;
 }
 .accent-p {
   text-transform: capitalize;
@@ -180,17 +184,19 @@ article {
 }
 .where {
   display: flex;
+  justify-content: center;
 }
 .map {
   border-radius: 32px;
-  margin: 0 32px 0 176px;
-  width: 605px;
+  margin: 0 32px 0 0;
+  max-width: 605px;
 }
 /* forma */
 .header-forma {
   font-weight: 600;
   font-size: 22px;
   line-height: 1;
+  margin-bottom: 32px;
 }
 .form-button-description {
   font-size: 12px;
@@ -201,4 +207,39 @@ article {
   background-color: var(--color-primary-dark);
   border-radius: 32px;
   padding: 48px 56px;
+  width: 422px;
+}
+/* footer */
+footer {
+  background-color: var(--color-primary-dark);
+  padding: 56px 0px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-social-logo {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.social-icon {
+  max-width: 192px;
 }
