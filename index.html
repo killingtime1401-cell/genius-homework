@@ -22,46 +22,49 @@
   </head>
   <body>
     <header>
-      <nav class="navigation">
-        <a style="align-items: center" href="/"
-          ><img src="./images/logo.svg" alt="логотип"
-        /></a>
-        <ul class="header-menu">
-          <li><a class="header-link" href="#about us">Про нас</a></li>
-          <li><a class="header-link" href="#why-us">Чому ми</a></li>
-          <li>
-            <a class="header-link" href="#our procedures">Наші процедури</a>
-          </li>
-          <li><a class="header-link" href="#where">Контакти</a></li>
-        </ul>
-        <ul class="header-social">
-          <li>
-            <a href="tel:+380666873213" target="_blank"
-              ><img
-                src="./images/telephone-receiver_icon-icons.com_56033 1.svg"
-                alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/?locale=uk_UA" target="_blank"
-              ><img src="./images/facebook.svg" alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/" target="_blank">
-              <img src="./images/inst.svg" alt=""
-            /></a>
-          </li>
-        </ul>
-        <!-- Logo and menu-->
-      </nav>
+      <div class="container">
+
+        <nav class="navigation">
+          <a style="align-items: center" href="/"
+            ><img src="./images/logo.svg" alt="логотип"
+          /></a>
+          <ul class="header-menu">
+            <li><a class="header-link" href="#about us">Про нас</a></li>
+            <li><a class="header-link" href="#why-us">Чому ми</a></li>
+            <li>
+              <a class="header-link" href="#our procedures">Наші процедури</a>
+            </li>
+            <li><a class="header-link" href="#where">Контакти</a></li>
+          </ul>
+          <ul class="header-social">
+            <li>
+              <a href="tel:+380666873213" target="_blank"
+                ><img
+                  src="./images/telephone-receiver_icon-icons.com_56033 1.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/?locale=uk_UA" target="_blank"
+                ><img src="./images/facebook.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="./images/inst.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+          <!-- Logo and menu-->
+        </nav>
+      </div>
 
       <!-- instagram, facebook,call -->
     </header>
 
     <main>
-      <section class="main">
-        <!-- 1 -->
+      <!-- 1 -->
+      <section class="hero-section">
         <div class="container">
           <p>Косметологічна клініка</p>
           <h1 class="hero-title">
@@ -74,10 +77,15 @@
           </p>
         </div>
       </section>
+      <!-- hidden section - how to hide content visually? -->
+       <section class="visually-hidden">
+        <h2>Hidden class</h2>
+       </section>
+    
       <!-- 2 -->
-      <section class="section" id="about us">
-        <div class="container about-us">
-          <h2 class="changes">
+      <section class="about-us section " id="about us">
+        <div class="container ">
+          <h2 class="changes section-title">
             Перевтілюйтесь <br />
             в <span class="accent-heading"> beauty zone! </span>
           </h2>
@@ -102,7 +110,7 @@
       <!-- 3 -->
       <section class="section" id="why-us">
         <div class="container">
-          <h2 class="why-us">
+          <h2 class="why-us section-title">
             Чому люди <span class="accent-heading"><br />обирають нас</span>
           </h2>
           <div class="why-us-description">
@@ -127,7 +135,7 @@
       <!-- 4 -->
       <section class="section" id="our procedures">
         <div class="container">
-          <h2 class="header-procedures">
+          <h2 class="header-procedures section-title">
             Наші <span class="accent-heading">процедури</span>
           </h2>
           <div class="procedures">
@@ -158,7 +166,7 @@
 
       <section class="section where" id="where">
         <div class="container">
-          <h2 class="where-title">
+          <h2 class="where-title section-title">
             Як нас <span class="accent-heading">знайти</span>
           </h2>
           <div class="where">

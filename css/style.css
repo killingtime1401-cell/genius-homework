@@ -25,7 +25,7 @@ body {
   line-height: 1;
   margin: 0;
 }
-h2 {
+.section-title {
   font-family: 'Play', sans-serif;
   font-weight: 700;
   font-size: 64px;
@@ -37,11 +37,13 @@ h3,
 p {
   margin: 0;
 }
+/* section must have padding not margin */
 .section {
   padding: 48px 0px;
 }
+/* margin 0 auto - auto center */
 .container {
-  margin: 0 auto;
+  margin: 0 auto; 
   max-width: 1288px;
   width: 100%;
   padding: 0 24px;
@@ -95,7 +97,7 @@ header {
 /*  */
 .navigation {
   display: flex;
-  padding: 0px 96px;
+  
   align-items: center;
   justify-content: space-between;
 }
@@ -113,6 +115,9 @@ header {
 }
 
 /* Hero section */ /* section 1 */
+.hero-section {
+  padding: 124px 0;
+}
 .hero-title {
   color: var(--color-brand);
   font-family: 'Play', sans-serif;
@@ -129,9 +134,18 @@ header {
   text-align: center;
   padding-top: 14px;
 }
+/* hidden section  */
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 
-/* Section 2 */
-
+/* Section 2 - about us*/
+.about-us {padding-top: 0;}
 .accent-heading {
   color: var(--color-brand);
 }
@@ -181,6 +195,7 @@ article {
 /* section 5 */
 .where-title {
   text-align: center;
+  margin-bottom: 48px;
 }
 .where {
   display: flex;
