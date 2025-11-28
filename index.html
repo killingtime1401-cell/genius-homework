@@ -23,40 +23,41 @@
   <body>
     <header>
       <div class="container">
-
-        <nav class="navigation">
-          <a style="align-items: center" href="/"
-            ><img src="./images/logo.svg" alt="логотип"
-          /></a>
-          <ul class="header-menu">
-            <li><a class="header-link" href="#about us">Про нас</a></li>
-            <li><a class="header-link" href="#why-us">Чому ми</a></li>
-            <li>
-              <a class="header-link" href="#our procedures">Наші процедури</a>
-            </li>
-            <li><a class="header-link" href="#where">Контакти</a></li>
-          </ul>
-          <ul class="header-social">
-            <li>
-              <a href="tel:+380666873213" target="_blank"
-                ><img
-                  src="./images/telephone-receiver_icon-icons.com_56033 1.svg"
-                  alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/?locale=uk_UA" target="_blank"
-                ><img src="./images/facebook.svg" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/" target="_blank">
-                <img src="./images/inst.svg" alt=""
-              /></a>
-            </li>
-          </ul>
-          <!-- Logo and menu-->
-        </nav>
+<div class="header-container">
+  <nav class="navigation">
+    <a style="align-items: center; height: 42px; " href="/"
+      ><img style="width: 74px; height: 42px;" src="./images/logo.svg" alt="логотип"
+    /></a>
+    <ul class="header-menu">
+      <li><a class="header-link" href="#about us">Про нас</a></li>
+      <li><a class="header-link" href="#why-us">Чому ми</a></li>
+      <li>
+        <a class="header-link" href="#our procedures">Наші процедури</a>
+      </li>
+      <li><a class="header-link" href="#where">Контакти</a></li>
+    </ul>
+    <ul class="header-social">
+      <li>
+        <a href="tel:+380666873213" target="_blank"
+          ><img style="height: 32px; width: 32px; ;"
+            src="./images/telephone-receiver_icon-icons.com_56033 1.svg"
+            alt=""
+        /></a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/?locale=uk_UA" target="_blank"
+          ><img style="height: 32px;width: 32px;" src="./images/facebook.svg" alt=""
+        /></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img style="height: 32px;width: 32px; " src="./images/inst.svg" alt=""
+        /></a>
+      </li>
+    </ul>
+    <!-- Logo and menu-->
+  </nav>
+</div>
       </div>
 
       <!-- instagram, facebook,call -->
@@ -66,7 +67,8 @@
       <!-- 1 -->
       <section class="hero-section">
         <div class="container">
-          <p>Косметологічна клініка</p>
+          <div class="hero-all">
+            <p>Косметологічна клініка</p>
           <h1 class="hero-title">
             beauty <br />
             zone
@@ -75,6 +77,8 @@
           <p class="button-description">
             Запишись та отримай безкоштовну консультацію нашого косметолога
           </p>
+        </div>
+    
         </div>
       </section>
       <!-- hidden section - how to hide content visually? -->
@@ -139,8 +143,8 @@
             Наші <span class="accent-heading">процедури</span>
           </h2>
           <div class="procedures">
-            <ul>
-              <li>
+            <ul class="procedures-slider">
+              <li >
                 <article>
                   <img src="./images/procedure1.jpg" alt="procedure1" />Маски
                   для обличчя

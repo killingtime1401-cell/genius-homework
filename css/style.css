@@ -94,27 +94,36 @@ header {
   background-color: bisque;
   padding: 32px 0px;
 }
+
 /*  */
 .navigation {
   display: flex;
-  
   align-items: center;
   justify-content: space-between;
+gap: 40px;
 }
 .header-menu {
   display: flex;
+  gap: 56px;
+  align-items: center;
+  
 }
-.header-menu li {
-  margin: 0px 28px;
+
+.header-social {
+  display: flex;
+   align-items: center;
+ 
+
 }
 .header-social {
   display: flex;
-}
-.header-social li {
-  margin: 0px 16px;
+  gap: 16px;
 }
 
 /* Hero section */ /* section 1 */
+.hero-all{
+  padding-left: 106px;
+}
 .hero-section {
   padding: 124px 0;
 }
@@ -173,7 +182,7 @@ header {
   gap: 58px;
   margin: 0px 190px;
 }
-article {
+.why-us-description article {
   background-color: var(--color-pimary-light);
   text-align: center;
   border-radius: 32px;
@@ -181,6 +190,10 @@ article {
   padding: 24px 32px;
 }
 /* sectiom 4 */
+.procedures-slider{ 
+  display: flex;
+
+}
 .procedures {
   color: var(--color-pimary-light);
 }
@@ -205,6 +218,7 @@ article {
   border-radius: 32px;
   margin: 0 32px 0 0;
   max-width: 605px;
+  width: 100%;
 }
 /* forma */
 .header-forma {
