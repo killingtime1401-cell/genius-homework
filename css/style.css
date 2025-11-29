@@ -2,6 +2,7 @@
   --color-brand: #2b7fff;
   --color-primary-dark: #011c44;
   --color-pimary-light: #ffffff;
+  --color-shadow: #a8c6f533;
 }
 
 /* Global/Base */
@@ -43,7 +44,7 @@ p {
 }
 /* margin 0 auto - auto center */
 .container {
-  margin: 0 auto; 
+  margin: 0 auto;
   max-width: 1288px;
   width: 100%;
   padding: 0 24px;
@@ -91,7 +92,6 @@ p {
 }
 /* header */
 header {
-  background-color: bisque;
   padding: 32px 0px;
 }
 
@@ -100,20 +100,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-gap: 40px;
+  gap: 40px;
 }
 .header-menu {
   display: flex;
   gap: 56px;
   align-items: center;
-  
 }
 
 .header-social {
   display: flex;
-   align-items: center;
- 
-
+  align-items: center;
 }
 .header-social {
   display: flex;
@@ -121,11 +118,16 @@ gap: 40px;
 }
 
 /* Hero section */ /* section 1 */
-.hero-all{
+.hero-all {
   padding-left: 106px;
 }
 .hero-section {
   padding: 124px 0;
+  background-image: url('../images/main-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  /* background: url('../images/main-background.jpg') no-repeat center; */
 }
 .hero-title {
   color: var(--color-brand);
@@ -152,9 +154,25 @@ gap: 40px;
   height: 1px;
   overflow: hidden;
 }
+/* example of gradient */
+/* .test-box {
+  width: 400px;
+  height: 300px;
+  border: 1px solid blue;
+  margin: 20px auto;
+  background-image: linear-gradient(
+    45deg,
+    gold 50%,
+    green 5 0%,
+    green 70%,
+    blue 100%
+  );
+} */
 
 /* Section 2 - about us*/
-.about-us {padding-top: 0;}
+.about-us {
+  padding-top: 0;
+}
 .accent-heading {
   color: var(--color-brand);
 }
@@ -164,6 +182,7 @@ gap: 40px;
 .discription-about-us {
   font-size: 22px;
   line-height: 1.7;
+  max-width: 709px;
 }
 .discription-about-us :first-child {
   margin-bottom: 40px;
@@ -171,32 +190,63 @@ gap: 40px;
 .changes {
   margin-bottom: 40px;
 }
+.changes-photo {
+  border-radius: 100%;
+  box-shadow: 0px 4px 4px 0 var(--color-shadow);
+}
 /* section 3 */
 .why-us {
+  background-image: linear-gradient(
+    225deg,
+    var(--color-brand),
+    var(--color-pimary-light)
+  );
+}
+.why-us-title {
   text-align: center;
   margin-bottom: 48px;
 }
 .why-us-description {
   display: flex;
   justify-content: center;
-  gap: 58px;
-  margin: 0px 190px;
+  gap: 56px;
+  align-items: center;
 }
 .why-us-description article {
   background-color: var(--color-pimary-light);
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  align-items: center;
+  justify-content: ;
   text-align: center;
   border-radius: 32px;
+  box-shadow: 0px 4px 4px var(--color-shadow);
   width: 316px;
+  /* max-height: 181px; */
   padding: 24px 32px;
+  gap: 8px;
 }
 /* sectiom 4 */
-.procedures-slider{ 
-  display: flex;
-
-}
-.procedures {
+.procedures-card {
+  padding-bottom: 32px;
+  width: 344px;
+  height: 456px;
+  background-color: #2b7fff;
+  text-align: center;
   color: var(--color-pimary-light);
+  padding-bottom: 32px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  border-radius: 4px 120px 4px 120px;
 }
+.procedures-slider {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
 .header-procedures {
   text-align: center;
   margin-bottom: 48px;
